@@ -16,7 +16,7 @@ from bson import json_util
 
 app = Flask(__name__)
 app.config.from_object('annotation_tools.default_config')
-app.config['MONGO_URI'] = "mongodb://172.17.0.14:27017/myData"
+app.config['MONGO_URI'] = "mongodb://172.17.0.3:27017/myData"
 
 if 'VAT_CONFIG' in os.environ:
   app.config.from_envvar('VAT_CONFIG')
